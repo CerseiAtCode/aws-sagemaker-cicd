@@ -6,6 +6,7 @@ import pandas as pd
 import flask
 from flask import Flask, Response
 
+
 model_path = '/opt/ml/model'
 model = joblib.load(os.path.join(model_path, "model.joblib"))
 

@@ -85,3 +85,5 @@ print(message)
 # Write metrics to file
 with open('details.txt', 'w') as outfile:
     outfile.write(message)
+
+print("Training process completed!!!")

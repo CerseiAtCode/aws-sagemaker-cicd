@@ -62,7 +62,7 @@ boston_estimator.fit({'training': training_data_s3_uri,
 
 training_job_name = boston_estimator.latest_training_job.name
 hyperparameters_dictionary = boston_estimator.hyperparameters()
-
+print("reports file path:============================================")
 print(f's3://{BUCKET_NAME}/{PREFIX}/reports.csv')
 report = pd.read_csv('s3://sagemker-vscode-experiment-rad/sagemker-cicd/reports.csv')
 while(len(report[report['commit_hash']==GITHUB_SHA]) == 0):

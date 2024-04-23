@@ -18,6 +18,7 @@ def ping():
     return Response(response="\n", status=200)
 
 
+
 @app.route("/invocations", methods=["POST"])
 def predict():
     if flask.request.content_type == 'text/csv':
